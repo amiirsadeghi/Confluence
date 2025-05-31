@@ -18,9 +18,7 @@ A Docker-based deployment of Atlassian Confluence using MySQL and Nginx with HTT
 ## 📦 Clone the Project
 
 ```bash
-git clone https://github.com/your-username/confluence-docker-setup.git
-cd confluence-docker-setup
-```
+git clone https://github.com/amiirsadeghi/Confluence.git
 
 ---
 
