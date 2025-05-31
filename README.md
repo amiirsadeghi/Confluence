@@ -112,7 +112,7 @@ https://your-domain.com
 ## 🛠 Tips
 
 - Make sure port 80 and 443 are open on your server.
-- Use a valid domain (e.g. conf.etadbir.com) that points to the host IP.
+- Use a valid domain (e.g. your-server.com) that points to the host IP.
 - Use `docker volume` instead of local paths if running on remote systems.
 
 ---
