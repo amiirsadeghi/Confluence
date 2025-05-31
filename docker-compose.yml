@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   confluence:
-    image: haxqer/confluence:9.2.1
+    image: atlassian/confluence:9.2.1
     container_name: confluence-srv
     environment:
       - TZ=${TZ}
