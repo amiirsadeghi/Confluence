@@ -124,3 +124,35 @@ https://your-domain.com
 This project is for educational and internal use only.
 No proprietary software or binaries are included in this repository.
 
+🔑 License Activation Guide
+
+Activating Confluence License
+
+Use the following command to activate your Confluence license via the licensing agent inside the running Confluence container:
+docker exec confluence-srv java -jar /var/agent/atlassian-agent.jar \\
+    -d \\
+    -p conf \\
+    -m your-email@example.com \\
+    -n your-name \\
+    -o your-organization \\
+    -s your-server-id
+Replace the placeholders (your-email@example.com, your-name, your-organization, your-server-id) with your actual license information.
+Activating a Confluence Plugin License
+
+For example, to activate the license for the BigGantt plugin:
+
+    Install BigGantt from the Confluence Marketplace.
+
+    Find the App Key of BigGantt (e.g., eu.softwareplant.biggantt).
+
+    Execute the following command:
+
+docker exec confluence-srv java -jar /var/agent/atlassian-agent.jar \\
+    -d \\
+    -p eu.softwareplant.biggantt \\
+    -m your-email@example.com \\
+    -n your-name \\
+    -o your-organization \\
+    -s your-server-id
+
+Paste your license key when prompted or as required.
